@@ -1,0 +1,18 @@
+<% include partials/header%>
+    <p id="waiting">Waiting for Next Person...</p>
+
+    <div class="container">
+        <div class="card">
+            <p><span class="title">Barcode Id: </span><span id="id"></span></p>
+            <p><span class="title">Name: </span><span id="name"></span></p>
+        </div>
+    </div>
+    </br>
+    <img class="status_register" src="success.png">
+
+    <script src="jquery.js"></script>
+    <script>
+        $('#registration').addClass('active')
+        $('#food').removeClass('active')
+    </script>
+<% include partials/footer%>
