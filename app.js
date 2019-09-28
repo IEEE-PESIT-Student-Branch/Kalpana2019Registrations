@@ -19,6 +19,7 @@ app.get('/food',function(req,res){
 });
 
 app.get('/help',function(req,res){
+    res.render("help");
 });
 
 app.get('/Schedule',function(req,res){
