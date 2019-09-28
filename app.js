@@ -18,6 +18,14 @@ app.get('/food',function(req,res){
     res.render("food");
 });
 
+app.get('/help',function(req,res){
+});
+
+app.get('/Schedule',function(req,res){
+    res.render("Schedule");
+});
+
 app.listen(8080,function(){
     console.log("Server Has Started");
 })
+
