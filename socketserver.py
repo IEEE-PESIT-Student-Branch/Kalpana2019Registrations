@@ -15,7 +15,8 @@ async def index(request):
 async def print_message(sid, message):
     print("Socket ID: " , sid)
     print(message)
-#codes
+
+#codes for what is to be done to barcode
 
 
 #attach to app
