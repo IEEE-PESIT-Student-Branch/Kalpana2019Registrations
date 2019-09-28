@@ -8,8 +8,15 @@
     </div>
     </br>
     <script src="jquery.js"></script>
+    //!Something needs to trigger sendBar()
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
     <script>
-        $('#Dinner').addClass('active')
+      const socket = io("http://localhost:8080");
+      function sendBar() {
+        socket.emit("message", "//stringbarcode");
+      }
+      //! 
+      $('#Dinner').addClass('active')
        // $('#registration').removeClass('active')
     </script>
 <% include partials/footer%>
