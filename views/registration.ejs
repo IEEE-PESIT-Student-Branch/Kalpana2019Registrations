@@ -11,7 +11,13 @@
     <img class="status_register" src="success.png">
 
     <script src="jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
     <script>
+      //!Something needs to trigger sendBar()
+      const socket = io("http://localhost:8080");
+      function sendBar() {
+        socket.emit("message", "//stringbarcode");
+      }  
         $('#registration').addClass('active')
        // $('#food').removeClass('active')
     </script>
