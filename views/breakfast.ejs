@@ -1,21 +1,23 @@
 <% include partials/header%>
 
-    <div class="container">
-        <div class="card">
-         <p><span class="title">Barcode Id: </span><span id="id"></span></p>
-         <p><span class="title">Name: </span><span id="name"></span></p>
-        </div>
+<p id="waiting">Waiting for Next Person...</p>
+
+<div class="container">
+    <div class="card">
+        <p><span class="title">Barcode Id: </span><span id="id"></span></p>
+        <p><span class="title">Name: </span><span id="name"></span></p>
     </div>
-    <script src="jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
-     //!Something needs to trigger sendBar()
-    <script>
-      const socket = io("http://localhost:8080");
-      function sendBar() {
-        socket.emit("message", "//barcodestring");
-      }
-     //!    
-        $('#breakfast').addClass('active')
-     //   $('#registrations').removeClass('active')
-    </script>
+</div>
+</br>
+<img id="register_success" src="success.png">
+<img id="register_fail" src="failure.png">
+
+<script src="jquery.js"></script>
+<script>
+    $('#breakfast').addClass('active')
+      $('#dinner').removeClass('active')
+      $('#lunch').removeClass('active')
+      $('#lns').removeClass('active')
+      $('#registration').removeClass('active')
+</script>
 <% include partials/footer%>

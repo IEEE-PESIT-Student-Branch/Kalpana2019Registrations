@@ -22,7 +22,15 @@ body {
     margin-top: 5%;
 }
 
-.status_register {
+#register_success {
+    height: 20%;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#register_fail {
     height: 20%;
     display: none;
     margin-left: auto;
